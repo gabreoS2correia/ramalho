@@ -6,7 +6,7 @@ body{
     display: grid;
     grid-template-areas:     
     "cab cab cab"
-    "asd pcp pcp"
+    "pcp pcp pcp"
     "ftt ftt ftt";
     grid-template-columns: 1fr 2fr 2fr;  
 }
@@ -15,8 +15,8 @@ body{
     color: rgb(148, 79, 79);
     display: flex;
     position: absolute;
-    top: 250px;
-    left: 870px;
+    top: 180px;
+    left: 750px;
 }
 
 .principal{
@@ -24,8 +24,9 @@ body{
     color: rgb(148, 79, 79);
     display: flex;
     position: absolute;
-    top: 320px;
-    margin: 50px;
+    top: 260px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 .coisas{
     color: rgb(255, 255, 255);
@@ -40,19 +41,13 @@ body{
 }
 header{
     grid-area: cab;
-    height: 200px;
+    height: 90px;
     background-color: rgb(226, 200, 165);
  
 }
-aside{
-    grid-area: asd;
-    height: 500px;
-    width: 200px;
-    background-color: rgb(160, 160, 160);
-}
 main{
     grid-area: pcp;
-    height: 500px;
+    height: 900px;
     background-color: rgb(255, 255, 255);
 }
 footer{
