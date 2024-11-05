@@ -52,9 +52,14 @@ img{
     width: 400px;
 }
 .rchrd_prc{
-    width: 200px;
+    width: 250px;
+    margin-top: 20px;
 }
+.brilho{
+    margin-bottom: 100px;
+    width: 100px;
 
+}
 .box_mae{
     display: flex;
     flex-wrap: wrap;
