@@ -9,30 +9,104 @@
 </head>
 
 <body>
-    <header>
-        <a href="inco.html"><img class="redbtn" src="Imagens/redbtn.png"></a>
-        <h1 class="tlte">CALCULADORA DE AMORTIZAÇÃO PRICE</h1>
+    <header><br>
+        <h1>CALCULADORA DE AMORTIZAÇÃO PRICE</h1>
     </header>
-    <main class="main1">
-        <input type="text" placeholder="Saldo Devedor" id="v">
-        <input type="text" placeholder="Taxa de Juros (Decimal)" id="i">
-        <input type="text" placeholder="Quantidade de Parcelas" id="n">
-        <button onclick="price()">Calcule!</button>
-        <table id="tab">
-            <thead>
-                <tr>
-                    <th>Parcela</th>
-                    <th>Prestação</th>
-                    <th>Juros</th>
-                    <th>Amortização</th>
-                    <th>Saldo Devedor</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+    <main>
+        <section class="card_">
+            <input class="inpt" type="text" placeholder="Saldo Devedor" id="v">
+            <input class="inpt" type="text" placeholder="Taxa de Juros (Decimal)" id="i">
+            <input class="inpt" type="text" placeholder="Quantidade de Parcelas" id="n">
+            <button class="inpt" onclick="price()">Calcule</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parcela</th>
+                        <th>Prestação</th>
+                        <th>Juros</th>
+                        <th>Amortização</th>
+                        <th>Saldo Devedor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="header_"><br>
+            <h1>SOBRE TABELA PRICE</h1>
+        </div>
+        
+        <section class="box_mae">
+            
+            <div class="card">
+                <h1>História</h1><br>
+                <p>Fala, Zezé. Bom dia, cara. Deixa eu te falar uma coisa. Eu estou pensando aqui, sei que está difícil para vocês aí arrumarem recursos, sei que está correndo atrás, mas estou falando por mim, não falei com ninguém do time. Vê se você não consegue pelo menos pagar esses outros 60% (dos salários atrasados) antes do jogo de quinta-feira, que aí não precisa nem ter bicho, entendeu, para ganhar jogo. É uma motivação a mais para a gente, cara, acertar o salário aí. Aí você não precisa arrumar uma premiação para ganhar o jogo, porque a obrigação nossa é ganhar esse jogo. Tá louco! Se a gente não ganhar do CSA, pelo amor de Deus. Pô, faz esse esforço para a gente aí, até quinta-feira, tentar acertar esses 60% que estão atrasados do salário.</p><br>
+                <img class="rchrd_prc" src="Imagens/aa.jpeg">
+            </div>
+            <div class="card">
+                <h1>Como Funciona</h1><br>
+                <p>Você já pensou em reduzir o prazo de seu financiamento pela Tabela Price? Vamos supor que tenha um financiamento em andamento e queira fazer uma amortização extra para fins de redução do prazo. Como vimos no artigo anterior, a fórmula para o cálculo do pagamento mensal (PMT) pela Tabela Price é:</p><br>
+                <img src="Imagens/bbb.jpg"><br>
+                <p>Como o financiamento está vigente, você já sabe o valor do PMT, da taxa de juros (i) e o saldo devedor que passa a ser o valor presente PV. Assim, o objetivo é determinar o valor do tempo (n) para o saldo devedor (após amortização extra) em algum momento dentro do prazo de financiamento. Esse valor pode ser obtido, conforme segue:</p><br>
+                <img src="Imagens/cc.jpg"><br>
+                <p>Onde R é a razão entre PMT e PV.</p><br>
+                <p>Isolando o termo que contém n e aplicando o logaritmo, tem-se:</p><br>
+                <img src="Imagens/freeaky.jpeg"><br>
+                <p>Portanto, o tempo de financiamento para o saldo devedor atual fica:</p><br>
+                <img src="Imagens/aaa.jpeg"></p>
+            </div>
+            <div class="card">
+                <h1>Exemplo</h1><br>
+                <p>Para ilustrar uma aplicação, sejam os mesmos dados usados no artigo anterior:</p><br>
+                <img src="Imagens/formula_6-1.png"><br>
+                <ul>
+                    <li>i = 0,0056541</li>
+                    <li>PMT = 1380,04</li>
+                    <li>Amortização extra = R$ 20.000,00</li>
+                </ul>
+                <p>O valor presente é o saldo devedor no 5º mês (consulte o artigo anterior) menos a amortização extra:</p><br>
+                <img src="Imagens/formula_7-1.png"><br>
+                <p>Sabendo o valor presente, pode-se determinar a razão R:</p><br>
+                <img src="Imagens/formula_8-1.png"><br>
+                <p>Assim, o tempo equivalente para um novo valor de PV fica:</p><br>
+                <img src="Imagens/formula_9-1-1024x141.png"><br>
+                <p>Como se trata de um número inteiro, arredonda-se o valor obtido para o inteiro mais próximo, ou seja, n=90. Portanto, a redução de prazo é equivalente a 25 meses, pois após o pagamento da 5ª parcela, faltavam 115 prestações que subtraídas de 90 resulta em 25. Além disso, deve-se atualizar o PMT, pois a amortização não foi feita com um número exato de prestações. Assim, deve-se calcular o novo PMT com base nas seguintes variáveis:</p><br>
+                <ul>
+                    <li>i = 0,0056541</li>
+                    <li>PV = 96452,40</li>
+                    <li>n = 90</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h1>Vantagens da Tabela Price</h1><br>
+                <p>Apesar de algumas desvantagens, a Tabela Price apresenta diversas vantagens que a tornam uma opção atraente em várias situações de crédito. A principal vantagem é a previsibilidade das parcelas fixas ao longo de todo o contrato. Isso significa que o cliente sabe exatamente quanto vai pagar a cada mês, o que facilita o planejamento financeiro. Essa previsibilidade é especialmente útil para consumidores que precisam organizar suas finanças com antecedência e não querem lidar com variações nas parcelas.</p><br>
+                <p>Além disso, a Tabela Price é um sistema simples e amplamente conhecido no mercado financeiro, o que facilita o entendimento tanto para consumidores quanto para instituições financeiras. A estabilidade das prestações é atraente para aqueles que desejam uma abordagem mais segura e organizada em seu planejamento financeiro, sem surpresas ao longo do período de pagamento.</p><br>
+                <h1>Desvantagens da Tabela Price</h1><br>
+                <p>A Tabela Price possui algumas desvantagens que podem tornar essa modalidade de amortização menos atrativa em determinados tipos de financiamento, especialmente em prazos mais longos. Uma das principais desvantagens é o custo total elevado com juros. No início do financiamento, grande parte da parcela é destinada ao pagamento dos juros, enquanto a amortização do principal (a parte que reduz efetivamente o saldo devedor) é pequena. Isso significa que, durante boa parte do contrato, o saldo devedor diminui de forma lenta, o que acaba gerando um custo maior ao longo do tempo em comparação a outros sistemas de amortização, como o SAC (Sistema de Amortização Constante).</p>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious? Why so Serious?</p>
+        <section class="footer_">
+            <div>
+                <h1>Quem Somos:</h1>
+                <ul class="ul_">
+                    <li>Caio</li>
+                    <li>Gabriel</li>
+                    <li>Guilherme</li>
+                    <li>Enzo</li>
+                    <li>Davi</li>
+                </ul>
+            </div>
+            <img src="Imagens/smartlutherkings-removebg-preview.png">
+            <div>
+                <h1>Redes Sociais:</h1><br>
+                <img class="img_" src="Imagens/5279111_network_fb_social media_facebook_facebook logo_icon.png">
+                <img class="img_" src="Imagens/5279112_camera_instagram_social media_instagram logo_icon.png">
+                <img class="img_" src="Imagens/5279123_tweet_twitter_twitter logo_icon.png">
+            </div>
+        </section>
     </footer>
 </body>
 </html>

@@ -1,101 +1,157 @@
-@font-face {
-    font-family: CarvingSoft;
-    src: url(fontes/MADECarvingSoftPERSONALUSE-SemiBold.otf);
-}
+
 *{
     margin: 0;
-}
-body{
     font-family: CarvingSoft;
 }
+
 header{
-    background-color: #b6285e;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    height: 90px;
+    background-image: url(Imagens/famoso.jpeg);
 }
 main{
+    background-image: url(Imagens/amoo.jpeg);
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    background-color: #ff669e;
-}
-.main1{
-    padding: 25px;
 }
 footer{
-    background-color: #b6285e;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ff9797;
 }
 input{
-    width: 200px;
-    padding: 15px;
-    border: none;
-    font-size: 15px;
+    background-color: aqua;
+    border: 2px solid black;
+    width: 300px;
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 25px;
 }
 button{
-    background-color: white;
-    border: none;
-    padding: 15px;
-    width: 225px;
-    border-radius: 5px;
-    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 4px dotted black;
+    background-color:#ff0000;
+    padding: 25px;
+    width: 350px;
+    height: 87px;
+    border-radius: 10px;
+    font-size: 25px;
 }
 button:hover{
+    font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
     transition: 0.25s;
-    background-color: #b6285e;
+    background-color: #000000;
+    color: #4169E1;
+
 }
-.redbtn{
-    width: 200px;
-    padding: 20px;
-}
-.redbtn:hover{
-    filter: grayscale(50%);
-    transform: scale(0.95);
-}
+
 img{
     width: 400px;
 }
 .rchrd_prc{
-    width: 250px;
-    margin-top: 20px;
+    width: 200px;
 }
-.brilho{
-    margin-bottom: 100px;
-    width: 100px;
 
+.header_{
+    font-family: 'Courier New', Courier, monospace;
+    height: 90px;
+    text-decoration: underline 2.5px;
+    text-decoration-color: #4169E1;
 }
+
 .box_mae{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .card{
-    border: 5px dotted rgb(125, 0, 136);
-    padding: 10px;
-    background-color: #ff86b6;
-    margin: 20px;
-    width: 600px;
-    height: 600px;
-    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius:400px;
+    padding: 25px;
+    background-color: #ff9797;
+    margin: 25px;
+    border: 4px dotted black;
+    border-style: solid;
+    width: 1600px;
 }
 
 p{
-    color: white;
+    margin-left: 50%;
+    transform: translate(-50%);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    width: 1000px;
 }
 
 h1{
-    color: rgb(150, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
 }
 
-.tlte{
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-#tab{
+.card_{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 100px;
+    width: 1000px;
     margin-left: 50%;
     transform: translate(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+ul{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: #4169E1;
+    text-align: left;
+    padding-left: 45%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 82%;
+}
+table td, table th {
+    border: 2px solid black;
+    padding: 8px;
 }
 tr{
+    font-size: 25px;
     color: white;
-    background-color: #b6285e;
+    background-color: #ff86b6;
 }
+tr:nth-child(even){
+    background-color: #ff4b90;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff4b90; 
+    color: white;
+}
+
+.footer_{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ul_{
+    list-style: none;
+    padding-left: 0;
+}
+.img_{
+    width: 100px;
+}
+
+.inpt{
+    margin: 25px;
+}
+

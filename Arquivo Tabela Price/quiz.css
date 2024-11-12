@@ -1,0 +1,161 @@
+@font-face {
+    font-family: mainfont;
+    src: url(fontes/MADECarvingSoftPERSONALUSE-SemiBold.otf);
+}
+
+*{
+    font-family: mainfont;
+}
+
+h1{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+html{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: gray;
+    text-align: center;
+    align-content: center;
+    margin: 0;
+    height: 20vh;
+}
+
+main{
+    background-color: lightgray;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+main h1{
+    width: 100%;
+    text-align: center;
+}
+
+.formula{
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.verde{
+    color: green;
+}
+
+.vermelho{
+    color: red;
+}
+
+.questionario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    align-content: space-around;
+}
+
+.questao{
+    width: 100%;
+    margin-bottom: 5%
+}
+
+.questao input{
+    font-size: 200%;
+    scale: 200%;
+}
+
+.resposta{
+    margin-left: 3%;
+}
+
+.qinfo{
+    text-align: center;
+}
+
+.qinfo h2{
+    font-size: 200%;
+}
+
+.qinfo p{
+    font-size: 150%;
+}
+
+.rescor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.rescor div{
+    width: 45%;
+}
+
+.qres{
+    margin-top: 5%;
+}
+
+.qres div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.qres div{
+    width: 100%;
+    font-size: 125%;
+}
+
+.correcao{
+    margin-top: 5%;
+    font-size: 125%;
+    text-align: center;
+    align-content: center;
+}
+
+.linha{
+    border-left: 5px solid black;
+}
+
+.butao{
+    width: 100%;
+    text-align: center;
+}
+
+button{
+    width: 20%;
+    height: 10vh;
+    margin-top: 5%;
+    font-size: 200%;
+    border-style: none;
+    border: 0.5vh solid black;
+    border-radius: 5vh;
+}
+
+button:hover{
+    filter: brightness(120%);
+    scale: 110%;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+footer{
+    background-color: gray;
+    height: 20vh;
+    text-align: center;
+    align-content: center;
+}
+
