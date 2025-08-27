@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+}
+header{
+    grid-area: header;
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    background-image: linear-gradient(#fdfdfd, #e4e4e4);
+}
+main{
+    grid-area: main;
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    background-image: url(imagens/colmeianova.png);
+}
+footer{
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+}

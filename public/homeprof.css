@@ -1,0 +1,275 @@
+@font-face {
+    font-family: buz1;
+    src: url(fonte/Itim-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "aside main main"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr;
+    background-color: #e4e4e4;
+}
+
+header {
+    grid-area: header;
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    background-image: linear-gradient(#fdfdfd, #e4e4e4);
+}
+
+header section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#divlogo, #divperfil {
+    width: 20%;
+    height: 100%;
+}
+
+#divlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#divlogo img {
+    width: 15rem;
+}
+
+#divnav {
+    width: 60%;
+    height: 100%;
+}
+
+aside {
+    grid-area: aside;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#e4e4e4, #fdfdfd, #fdfdfd, #fdfdfd, #fdfdfd);
+}
+
+#secnav{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.navbut{
+    width: 80%;
+    height: 3rem;
+    background-color: #fdfdfd;
+    border: 0.25rem solid #e4e4e4;
+    border-radius: 5rem;
+    color: #3a1c12;
+    font-family: buz1;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.navbut:hover{
+    filter: brightness(95%);
+    border: 0.25rem solid #ffda33;
+}
+
+#secturmas{
+    width: 100%;
+    height: 75%;
+}
+
+#astitulo{
+    text-align: center;
+    color: #3a1c12;
+    font-family: buz1;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#subsecturmas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.divtur{
+    width: 90%;
+    height: 4.5rem;
+    background-color: #fdfdfd;
+    border: 0.25rem solid #e4e4e4;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.divtur:hover{
+    filter: brightness(95%);
+    border: 0.25rem solid #ffda33;
+}
+
+main {
+    grid-area: main;
+    position: relative;
+    width: 100%;
+    height: 60rem;
+    background-image: url(imagens/colmeianova.png);
+    border-radius: 2rem 0 0 0;
+}
+
+#fundo {
+    width: 100%;
+    height: 20rem;
+    background-image: linear-gradient(#e4e4e4, transparent, transparent, transparent, #fdfdfd);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#fundo button {
+    width: 25%;
+    height: 7rem;
+    border-radius: 2rem;
+    border: 0.25rem solid #e4e4e4;
+    background-color: #fdfdfd;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #3a1c12;
+    font-family: buz1;
+}
+
+#fundo button:hover {
+    scale: 105%;
+    filter: brightness(97.5%);
+    border: 0.5rem solid #ffda33;
+}
+
+#secmain {
+    width: 100%;
+    height: calc(100% - 20rem);
+    background-color: #fdfdfd;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#secatvenv, #secatvenc{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#titulo{
+    color: #3a1c12;
+    font-family: buz1;
+    font-size: 2rem;
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 100%;
+}
+
+#carrossel{
+    /*background-color: pink;*/
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#butao{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    color: #afafaf;
+    cursor: pointer;
+    border: none;
+    background-color: #fdfdfd;
+    transition: 0.5s;
+}
+
+#butao:hover{
+    color: #ffda33;
+}
+
+#seccarrossel{
+    width: calc(100% - 8rem);
+    height: 100%;
+    /*background-color: purple;*/
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#secroladora{
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /*background-color: plum;*/
+    gap: 1rem;
+}
+
+.divatv{
+    width: 15rem;
+    height: 15rem;
+    background-color: #fdfdfd;
+    border: 0.4rem solid #e4e4e4;
+    border-radius: 3rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.divatv:hover{
+    filter: brightness(95%);
+    border: 0.4rem solid #ffda33;
+}
+
+footer {
+    grid-area: footer;
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    background-image: linear-gradient(#fdfdfd, #e4e4e4);
+}
+
+#secfooter{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#secfooter div{
+    width: 30%;
+    height: 100%;
+}
+
+.divfot{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.divfot img{
+    height: 8rem;
+}
