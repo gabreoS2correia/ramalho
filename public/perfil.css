@@ -7,29 +7,73 @@ header{
     grid-area: header;
     position: relative;
     width: 100%;
-    height: 10rem;
+   /* height: 10rem;*/
     background-image: linear-gradient(#fdfdfd, #e4e4e4);
 }
 main{
     grid-area: main;
     position: relative;
     width: 100%;
-    height: 60rem;
+    height: 25%;
     background-image: url(imagens/colmeianova.png);
 }
 footer{
-    height: 10rem;
+     width: 100%;
+   /* height: 10rem;*/
     background-image: linear-gradient(#e4e4e4 ,#fdfdfd);
 }
 #perfil{
-    margin-left: 5rem;
+    margin: 2rem;
+    width: 70rem;
+    text-align: center;
+    border-radius: 60px;
+    background-color: #f2f2f2;
+    margin-left: 13rem;
     margin-bottom: 55rem;
     display: inline-block;
 }
+#salvar{
+    border: 3px solid #613a18;
+    margin: 1rem;
+    border-radius: 35px;
+    color: #613a18;
+    background-color: #ffda33;
+    width: 10rem;
+    height: 4rem;
+}
+#salvar:hover{
+    border: 3px solid #ffda33;
+    margin: 1rem;
+    border-radius: 35px;
+    color: #ffda33;
+    background-color: #613a18;
+    width: 10rem;
+    height: 4rem;
+
+}
+#cancel{
+    border: 3px solid #ffda33;
+    margin: 1rem;
+    border-radius: 35px;
+    color: #ffda33;
+    background-color: #613a18;
+    width: 10rem;
+    height: 4rem;
+
+}
+#cancel:hover{
+    border: 3px solid #613a18;
+    margin: 1rem;
+    border-radius: 35px;
+    color: #613a18;
+    background-color: #ffda33;
+    width: 10rem;
+    height: 4rem;
+}
 #imgicon{
-    height: 17rem;
-    margin-left: 15rem;
-    margin-top: 6rem;
+    margin-top: 1rem;
+    height: 12rem;
+
 }
 #nome{
     margin: 1rem;
