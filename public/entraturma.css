@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+}
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "aside main main"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr;
+    background-color: #e4e4e4;
+}
+header {
+    grid-area: header;
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    background-image: linear-gradient(#fdfdfd, #e4e4e4);
+}
+aside {
+    grid-area: aside;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#e4e4e4, #fdfdfd, #fdfdfd, #fdfdfd, #fdfdfd);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: main;
+    position: relative;
+    width: 100%;
+    height: 60rem;
+    background-image: url(imagens/colmeianova.png);
+    border-radius: 2rem 0 0 0;
+}
+footer {
+    grid-area: footer;
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    background-image: linear-gradient(#fdfdfd, #e4e4e4);
+}
+#entraquiz{
+    display: inline-block;
+    background-color: #e4e4e4;
+    width: 15rem;
+}
+#titulo1{
+    display: inline-block
+}
+#titulo2{
+    display: inline-block
+}
+#codigo{
+    display: inline-block
+}
+#link{
+    display: inline-block
+}
